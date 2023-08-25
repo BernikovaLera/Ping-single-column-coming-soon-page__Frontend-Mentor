@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--Blue: hsl(223, 87%, 63%);
+--PaleBlue: hsl(223, 100%, 88%);
+--LightRed: hsl(354, 100%, 66%);
+--Gray: hsl(0, 0%, 59%);
+--VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+p {
+    color: var(--Gray);
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.heading h1 {
+    font-weight: 300;
+    padding: 50px 0 20px;
+}
+
+.heading h1 span {
+    font-weight:700;
+    color: var(--VeryDarkBlue);
+}
+
+.heading p {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.heading .form-control {
+    width: 300px;
+    margin: auto;
+}
+
+.heading .form-control input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--Blue);
+    border: 1px solid var(--Blue);
+    border-radius: 30px;
+    outline: none;
+}
+
+.heading .form-control input::placeholder {
+    color: var(--Blue);
+}
+
+.heading .form-control button {
+    width: 100%;
+    background-color: var(--Blue);
+    color: white;
+    font-family: inherit;
+    padding: 8px;
+    border: 1px solid var(--Blue);
+    border-radius: 30px;
+    transition: background-color 0.4s;
+}
+
+.heading .form-control button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--Blue);
+}
+
+.showcase{
+    padding: 50px 20px 80px;
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer ul li {
+    margin: 0 20px;
+}
+
+.footer ul li a {
+    color: var(--Blue);
+    padding: 10px;
+    transition: background-color 0.4s;
+}
+
+.footer ul li a:hover {
+    background-color: var(--Blue);
+    border-radius: 50%;
+    color: white;
+}
+
+.footer p {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 700px) {
+    .heading h1 {
+        font-size: 36px;
+    }
+    .heading .form-control {
+        width: auto;
+    }
+    .heading .form-control input,
+    .heading .form-control button {
+        width: auto;
+        padding: 12px 20px;
+    }
+    .heading .form-control button {
+        width: 150px;
+    }
+    .showcase img {
+        width: 600px;
+    }
+}
